@@ -9,6 +9,7 @@ url = 'http://www.google.com/search'
 
 def apply_load(iterations):
     try:
+        print "start {}".format(multiprocessing.current_process().name)
         s = time()
         success = 0
         error = 0
